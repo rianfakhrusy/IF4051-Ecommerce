@@ -8,7 +8,10 @@
  *
  * @author Husni
  */
+import groovy.transform.Canonical
+
+@Canonical
 class Cart {
-	
+    List<Tuple<Product,Integer>> items = []
 }
 

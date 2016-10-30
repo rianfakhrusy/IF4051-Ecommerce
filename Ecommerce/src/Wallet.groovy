@@ -8,7 +8,12 @@
  *
  * @author Husni
  */
-class Wallet {
-	
-}
+import groovy.transform.Canonical
 
+@Canonical
+class Wallet {
+    int amount
+    void addAmount(BigDecimal n){
+        amount += n
+    }
+}

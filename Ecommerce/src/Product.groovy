@@ -8,7 +8,11 @@
  *
  * @author Husni
  */
+import groovy.transform.Canonical
+
+@Canonical
 class Product {
-	
+    String name, description, category
+    int stock, price
 }
 

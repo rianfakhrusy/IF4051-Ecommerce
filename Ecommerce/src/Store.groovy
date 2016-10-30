@@ -8,7 +8,12 @@
  *
  * @author Husni
  */
+import groovy.transform.Canonical
+
+@Canonical
 class Store {
-	
+    String storeLocation, storeDescription
+    List<Product> products = []
+    List<Order> orders = []
 }
 

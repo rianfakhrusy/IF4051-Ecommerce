@@ -8,7 +8,13 @@
  *
  * @author Husni
  */
+import groovy.transform.Canonical
+
+@Canonical
 class User {
-	
+    String name, username, email, address, password
+    Wallet wallet
+    Store store
+    List<Order> orders = []
 }
 

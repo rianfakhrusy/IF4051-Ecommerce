@@ -8,7 +8,11 @@
  *
  * @author Husni
  */
+import groovy.transform.Canonical
+
+@Canonical
 class Shipment {
-	
+    String shipmentStatus
+    Date receivedDate, sentDate
 }
 
