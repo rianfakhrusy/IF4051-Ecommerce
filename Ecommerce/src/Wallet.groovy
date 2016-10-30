@@ -12,8 +12,8 @@ import groovy.transform.Canonical
 
 @Canonical
 class Wallet {
-    int amount
-    void addAmount(BigDecimal n){
+    BigDecimal amount
+    void topUp(BigDecimal n){
         amount += n
     }
 }

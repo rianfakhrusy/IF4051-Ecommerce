@@ -12,7 +12,8 @@ import groovy.transform.Canonical
 
 @Canonical
 class Order {
-    List<Tuple<Product, Integer>> items = []
+    int id
+    List<Tuple> items = []
     Date date
     String orderStatus, orderType, address
     Shipment shipment
